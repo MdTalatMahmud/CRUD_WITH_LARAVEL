@@ -40,6 +40,8 @@
 
         </tbody>
     </table>
+{{--    paginating--}}
+    {{$students->links()}}
 
 
 

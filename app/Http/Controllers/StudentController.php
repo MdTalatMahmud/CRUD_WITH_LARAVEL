@@ -36,7 +36,7 @@ class StudentController extends Controller
     }
 
     public function show(){
-        $students = Student::all();
+        $students = Student::paginate(3);
         return view('show',compact('students'));
     }
 
